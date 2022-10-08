@@ -20,22 +20,25 @@ seeds:
       +column_types:
         country_code: varchar(2)
         country_name: varchar(32)
-
 ```
 
 </File>
 
-<File name='seeds/properties.yml'>
+
 
 Or (as of v0.21):
+
+<File name='seeds/properties.yml'>
+
 ```yml
 version: 2
 
 seeds:
   - name: country_codes
     config:
-      country_code: varchar(2)
-      country_name: varchar(32)
+      column_types:
+        country_code: varchar(2)
+        country_name: varchar(32)
 ```
 
 </File>
